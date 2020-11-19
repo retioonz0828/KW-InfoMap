@@ -115,7 +115,7 @@ function displayPlaces(places) {
 
         // 마커를 생성하고 지도에 표시합니다
         var marker = addMarker(new kakao.maps.LatLng(places[i].y, places[i].x));
-        var position = new kakao.maps.LatLng(places[i].y, places[i].x);
+        //var position = new kakao.maps.LatLng(places[i].y, places[i].x);
         // 마커와 검색결과 항목을 클릭 했을 때
         // 장소정보를 표출하도록 클릭 이벤트를 등록합니다
         (function (marker, place) {
@@ -130,7 +130,7 @@ function displayPlaces(places) {
                     infowindow.open(map, marker);
                 }
 
-            }); x
+            });
         })(marker, places[i]);
 
     }
