@@ -5,7 +5,7 @@ document.body.appendChild(mapwrap);
 
 // 지도를 표시할 div
 var mapOption = {
-    center: new kakao.maps.LatLng(37.6207, 127.058), // 지도의 중심좌표
+    center: new kakao.maps.LatLng(37.6208, 127.0593), // 지도의 중심좌표
     level: 3 // 지도의 확대 레벨
 };
 
@@ -50,39 +50,51 @@ function searchPlaces() {
 }
 
 //학교건물
+//학교건물
 var kwpositions = [
-
+    
     {   //화도
+        title: "화도관",
         latlng: new kakao.maps.LatLng(37.620507, 127.059466)
-    },
+    }, 
     {   //비마
+        title: "비마관",
         latlng: new kakao.maps.LatLng(37.619640, 127.059890)
     },
     {   //새빛
+        title: "새빛관",
         latlng: new kakao.maps.LatLng(37.619865, 127.060931)
     },
     {   //문화
+        title: "동해문화예술관",
         latlng: new kakao.maps.LatLng(37.619883, 127.057685)
     },
     {   //옥의
+        title: "옥의관",
         latlng: new kakao.maps.LatLng(37.618872, 127.059187)
     },
     {   //한울
+        title: "한울관",
         latlng: new kakao.maps.LatLng(37.620839, 127.057020)
     },
     {   //누리
+        title: "누리관",
         latlng: new kakao.maps.LatLng(37.620435, 127.054894)
     },
     {   //참빛
+        title: "참빛관",
         latlng: new kakao.maps.LatLng(37.619227, 127.060960)
     },
     {   //80기념관(도서관)
+        title: "80주년기념관(도서관)",
         latlng: new kakao.maps.LatLng(37.620084, 127.058764)
     },
     {   //복지관
+        title: "복지관",
         latlng: new kakao.maps.LatLng(37.619427, 127.058333)
     },
     {   //기숙사
+        title: "빛솔재(기숙사)",
         latlng: new kakao.maps.LatLng(37.621446, 127.056245)
     }
 ];
