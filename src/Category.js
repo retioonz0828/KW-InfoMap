@@ -21,9 +21,11 @@ categorysel.addEventListener('click', function (e) {
         currclick='';
         removeMarker()
         updatecode("");
+        infowindow.close();
     }else{
         currclick=e.target.id;
         updatecode(e.target.id);
+        infowindow.close();
     }
 });
 
@@ -33,7 +35,7 @@ for(var i=0;i<placelist.length;i++){
     btn.type="button";
     btn.innerText=placelist[i].ko;
     btn.id=placelist[i].code;
-    if(currclick==placelist[i].code){
+    if(currclick===placelist[i].code){
         btn.className="btn on";
     }
     else{
