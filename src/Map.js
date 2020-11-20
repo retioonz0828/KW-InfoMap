@@ -19,6 +19,8 @@ var infowindow = new kakao.maps.InfoWindow({
     zIndex: 1,
     removable: true
 });
+// 커스텀 오버레이를 생성합니다
+var customOverlay = new kakao.maps.CustomOverlay({ zIndex: 1, map: map, removable: true })
 
 var markers = [], //마커를 담을 배열
     currCategory = ''; //현재 선택된 카테고리
@@ -26,37 +28,14 @@ var markers = [], //마커를 담을 배열
 // 장소 검색 객체 생성
 var ps = new kakao.maps.services.Places(map);
 
-// 카테고리 검색을 요청하는 함수입니다
-function searchPlaces() {
-    if (!currCategory) {
-        return;
-    }
-
-    // 지도에 표시되고 있는 마커를 제거합니다
-    removeMarker();
-    switch (currCategory) {
-        case "CS2":
-        case "FD6":
-        case "CE7":
-        case "BK9":
-        case "HP8":
-        case "PM9":
-        case "":
-            ps.categorySearch(currCategory, placesSearchCB, { useMapBounds: true });
-            break;
-        case "KW":
-            kwplace();
-    }
-}
-
 //학교건물
 //학교건물
 var kwpositions = [
-    
+
     {   //화도
         title: "화도관",
         latlng: new kakao.maps.LatLng(37.620507, 127.059466)
-    }, 
+    },
     {   //비마
         title: "비마관",
         latlng: new kakao.maps.LatLng(37.619640, 127.059890)
@@ -99,9 +78,272 @@ var kwpositions = [
     }
 ];
 
-function kwplace() {
+
+
+// 카테고리 검색을 요청하는 함수입니다
+function searchPlaces() {
+    if (!currCategory) {
+        return;
+    }
+
+    // 지도에 표시되고 있는 마커를 제거합니다
+    removeMarker();
+    removeOverlay()
+    switch (currCategory) {
+        case "CS2":
+        case "FD6":
+        case "CE7":
+        case "BK9":
+        case "HP8":
+        case "PM9":
+        case "":
+            ps.categorySearch(currCategory, placesSearchCB, { useMapBounds: true });
+            break;
+        case "KW":
+            kwplace(kwpositions);
+    }
+}
+
+
+
+function kwplace(kwpositions) {
     for (var i = 0; i < kwpositions.length; i++) {
-        var maker = addMarker(kwpositions[i].latlng);
+        var marker = addMarker(kwpositions[i].latlng);
+        var content;
+        if (i == 0) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            화도관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_18.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
+                '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 404-21</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+
+        else if (i == 1) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            비마관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_07.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
+                '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 2) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            새빛관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_07.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
+                '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 3) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            동해문화예술관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_05.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 21</div>' +
+                '                <div class="jibun ellipsis">(우)01890 (지번) 월계동 466</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 4) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            옥의관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_14.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로6길 31</div>' +
+                '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-5</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 5) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            한울관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_16.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 27-38</div>' +
+                '                <div class="jibun ellipsis">(우) 01891 (지번) 월계동 465-41</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 6) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            누리관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_03.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로1길 60</div>' +
+                '                <div class="jibun ellipsis">(우) 01890 (지번) 월계동 505-2</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 7) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            참빛관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_15.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
+                '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 8) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            80주년기념관(도서관)' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_24.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
+                '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 9) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            복지관' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_06.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
+                '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-41</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        else if (i == 10) {
+            content = '<div class="ovr">' +
+                '    <div class="info">' +
+                '        <div class="title">' +
+                '            빛솔재(기숙사)' +
+                '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                '        </div>' +
+                '        <div class="body">' +
+                '            <div class="img">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_26.jpg" width="73" height="70">' +
+                '           </div>' +
+                '            <div class="desc">' +
+                '                <div class="ellipsis">서울 노원구 광운로 21</div>' +
+                '                <div class="jibun ellipsis">(우) 01890 (지번) 월계동 500-40</div>' +
+                '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">홈페이지</a></div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                '</div>';
+        }
+        (function (marker, place, content) {
+            kakao.maps.event.addListener(marker, 'click', function () {
+                displayPlaceInfo(place);
+
+
+
+                customOverlay.setContent(content);
+                customOverlay.setMap(map);
+            });
+        })(marker, kwpositions[i].latlng, content);
+
+
+
     }
 }
 
@@ -132,16 +374,10 @@ function displayPlaces(places) {
         // 장소정보를 표출하도록 클릭 이벤트를 등록합니다
         (function (marker, place) {
             kakao.maps.event.addListener(marker, 'click', function () {
-                if (currCategory == "KW") {
-                    // 광운대 건물이면 커스텀 오버레이
-                }
-
-                else { // 나머지 인포윈도우
-                    infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
-                    infowindow.setPosition(position);
-                    infowindow.open(map, marker);
-                }
-
+                // 인포윈도우
+                infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
+                infowindow.setPosition(position);
+                infowindow.open(map, marker);
             });
         })(marker, places[i]);
 
@@ -169,4 +405,14 @@ function removeMarker() {
 function updatecode(category) {
     currCategory = category;
     searchPlaces();
+}
+
+function removeOverlay() {
+    customOverlay.setMap(null);
+}
+
+// 클릭한 마커에 대한 장소 상세정보를 커스텀 오버레이로 표시하는 함수입니다
+function displayPlaceInfo(place) {
+    customOverlay.setPosition(place);
+    customOverlay.setMap(map);
 }
