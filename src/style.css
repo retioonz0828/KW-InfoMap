@@ -7,7 +7,7 @@ body{
     width: 100%;
     height: 100%;
 }
-  
+
 #tit{
     width: 20vw;
     height: 8vh;
@@ -58,4 +58,12 @@ body{
     height:92vh;
     border-radius: 0 20px 20px 0;
     position: absolute; left: 20vw; bottom: 0vw;
+}
+
+.ovr{
+    width: 160;
+    height: 90;
+    background-color: rgba(255, 255, 255, 0.884);
+    text-align: center;
+    box-shadow: 0 0 3px;
 }
