@@ -294,6 +294,7 @@ function kwplace(kwpositions) {
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
                 '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
                 '                <div><a href="pages/80주년기념관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/중앙도서관.html"> 중앙도서관 안내 </a></div>'
                 '                <div><a href="https://place.map.kakao.com/823736351" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
