@@ -29,7 +29,7 @@ body{
 .sidebar-wrapper{
     width: 20vw;
     height:92vh;
-    background-color: rgba(244, 248, 16, 0.986);
+    background-color: rgba(199, 241, 165, 0.904);
     border-radius: 20px 0 0 20px;
     position: absolute; left: 0vw; bottom: 0vw;
     overflow:scroll;
