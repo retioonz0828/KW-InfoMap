@@ -39,16 +39,17 @@ body{
     border: 3px solid black;
     margin: 8px 0 0 8px;
     width: 275px;
-    height: 107px;
+    height: 120px;
     background-color: #ffffff;
     border-radius: 10px;
 }
+
 .item:hover{
     background-color: rgba(20, 102, 255, 0.979);
     color: white;
     cursor: pointer;
     width: 267px;
-    height: 100px;
+    height: 115px;
 }
 
 .infowin{
@@ -146,7 +147,7 @@ a.kwbtn2{
     color: white;
     width: 17px;
     height: 17px;
-    background-image: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
+    background-image: url('../pages/overlay_close.png');
 }
 .info .close:hover {cursor: pointer;}
 .info .body {position: relative;overflow: hidden;}

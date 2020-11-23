@@ -72,13 +72,12 @@ function kwplace(kwpositions) {
                 customOverlay.setContent(content);
                 customOverlay.setMap(map);
             });
-            itemEl.onmouseover =  function () {
+            
+            //사이드바 클릭
+            itemEl.onclick=function () {
                 displayPlaceInfo(place);
                 customOverlay.setContent(content);
-            };
-    
-            itemEl.onmouseout =  function () {
-                removeOverlay();
+                itemEl.className="item-on";
             };
         })(marker, kwpositions[i].latlng, content);
         listEl.appendChild(itemEl);
@@ -136,6 +135,11 @@ function displayPlaces(places) {
             itemEl.onmouseout =  function () {
                 infowindow.close();
             };
+            // itemEl.onclick=function () {
+            //     displayInfowindow(marker, title);
+                
+            // };
+            
         })(marker, places[i].place_name);
     listEl.appendChild(itemEl);// 여기서 
 
@@ -200,10 +204,14 @@ function getListItem(index, places) {
     } else {
         
     }
-
-      itemStr += '<span>' + '번호: '+  places.phone  + '</span>'+'<br>' +
+    if(currCategory=='BK9'){
+      itemStr += '<span>' + '번호: '+  places.phone  + '</span>'+'<br>' 
+                +'</div>';
+    }else{
+        itemStr += '<span>' + '번호: '+  places.phone  + '</span>'+'<br>' +
+                '<span style="font-size=5px;">' +  places.category_name  + '</span>'+'<br>'
                 '</div>';
-
+    }
     el.innerHTML = itemStr;
     el.className = 'item';
 
