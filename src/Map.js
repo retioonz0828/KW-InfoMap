@@ -119,7 +119,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_18.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_18.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
@@ -141,7 +141,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_07.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_07.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
@@ -162,7 +162,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_07.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_07.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
@@ -183,7 +183,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_05.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_05.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 21</div>' +
@@ -204,7 +204,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_14.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_14.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로6길 31</div>' +
@@ -225,7 +225,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_16.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_16.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 27-38</div>' +
@@ -246,7 +246,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_03.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_03.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로1길 60</div>' +
@@ -267,7 +267,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_15.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_15.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
@@ -288,7 +288,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_24.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_24.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
@@ -309,7 +309,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_06.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_06.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
@@ -330,7 +330,7 @@ function kwplace(kwpositions) {
                 '        </div>' +
                 '        <div class="body">' +
                 '            <div class="img">' +
-                '                <img src="https://www.kw.ac.kr/ko/img/tour01_26.jpg" width="73" height="70">' +
+                '                <img src="https://www.kw.ac.kr/ko/img/tour01_26.jpg" width="110" height="90">' +
                 '           </div>' +
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 21</div>' +
@@ -375,25 +375,52 @@ function placesSearchCB(data, status, pagination) {
 // 지도에 마커를 표출하는 함수입니다
 function displayPlaces(places) {
 
-    for (var i = 0; i < places.length; i++) {
+    menuEl = document.getElementById('sidebar-wrapper');
+    listStr = '';
+    var listEl = document.getElementById('placesList');
+
+    listEl.innerHTML = '';
+    for ( var i=0; i<places.length; i++ ) {
 
         // 마커를 생성하고 지도에 표시합니다
         var marker = addMarker(new kakao.maps.LatLng(places[i].y, places[i].x));
-        var position = new kakao.maps.LatLng(places[i].y, places[i].x);
+        itemEl = getListItem(i, places[i]);
+        
         // 마커와 검색결과 항목을 클릭 했을 때
         // 장소정보를 표출하도록 클릭 이벤트를 등록합니다
-        (function (marker, place) {
-            kakao.maps.event.addListener(marker, 'click', function () {
-                // 인포윈도우
-                infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
-                infowindow.setPosition(position);
-                infowindow.open(map, marker);
+        kakao.maps.event.addListener(marker, 'click', function() {
+            // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
+            infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name+'</div>');
+            infowindow.open(map, marker);
+        });
+        (function(marker, title) {
+            kakao.maps.event.addListener(marker, 'mouseover', function() {
+                displayInfowindow(marker, title);
             });
-        })(marker, places[i]);
+    
+            kakao.maps.event.addListener(marker, 'mouseout', function() {
+                infowindow.close();
+            });
+    
+            itemEl.onmouseover =  function () {
+                displayInfowindow(marker, title);
+            };
+    
+            itemEl.onmouseout =  function () {
+                infowindow.close();
+            };
+        })(marker, places[i].place_name);
+    listEl.appendChild(itemEl);// 여기서 
 
     }
 }
+//마우스 오버용 
+function displayInfowindow(marker, title) {
+    var content = '<div style="padding:5px;z-index:1;">' + title + '</div>';
 
+    infowindow.setContent(content);
+    infowindow.open(map, marker);
+}
 function addMarker(position) {
     var marker = new kakao.maps.Marker({
         position: position, // 마커의 위치
@@ -421,8 +448,34 @@ function removeOverlay() {
     customOverlay.setMap(null);
 }
 
+
 // 클릭한 마커에 대한 장소 상세정보를 커스텀 오버레이로 표시하는 함수입니다
 function displayPlaceInfo(place) {
     customOverlay.setPosition(place);
     customOverlay.setMap(map);
+}
+
+//사이드바 구현
+function getListItem(index, places) {
+
+    var el = document.createElement('li'),
+    itemStr = '<span' + (index+1) + '"></span>' +
+                '<div class="info">' +
+                '   <h3>' +'이름:'+ places.place_name + '</h3>';
+
+    if (places.address_name) {
+        itemStr += 
+                    '   <span>' + '주소:'+ places.address_name  + '</span>';
+    } else {
+        
+        
+    }
+
+      itemStr += ' <span>  ' +      '번호:'+   places.phone     + '</span>' +
+                '</div>';
+
+    el.innerHTML = itemStr;
+    el.className = 'item';
+
+    return el;
 }
