@@ -124,7 +124,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
                 '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 404-21</div>' +
-                '                <div><a href="pages/화도관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/화도관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/17563675" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -146,7 +146,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
                 '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
-                '                <div><a href="pages/비마관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/비마관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/17561911" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -167,7 +167,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
                 '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
-                '                <div><a href="pages/새빛관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/새빛관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/715015774" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -188,7 +188,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 21</div>' +
                 '                <div class="jibun ellipsis">(우)01890 (지번) 월계동 466</div>' +
-                '                <div><a href="pages/동해문화예술관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/동해문화예술관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/17564275" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -209,7 +209,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로6길 31</div>' +
                 '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-5</div>' +
-                '                <div><a href="pages/옥의관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/옥의관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/17567827" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -230,7 +230,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 27-38</div>' +
                 '                <div class="jibun ellipsis">(우) 01891 (지번) 월계동 465-41</div>' +
-                '                <div><a href="pages/한울관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/한울관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/17566581" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -251,7 +251,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로1길 60</div>' +
                 '                <div class="jibun ellipsis">(우) 01890 (지번) 월계동 505-2</div>' +
-                '                <div><a href="pages/누리관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/누리관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/12721052" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -272,7 +272,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
                 '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
-                '                <div><a href="pages/참빛관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/참빛관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/27202326" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -293,7 +293,8 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
                 '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
-                '                <div><a href="pages/80주년기념관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/80주년기념관.html" target="_blank">안내 페이지</a></div>' +
+                '                <div><a href="pages/중앙도서관.html" target="_blank">중앙 도서관 안내</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/823736351" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
@@ -314,7 +315,7 @@ function kwplace(kwpositions) {
                 '            <div class="desc">' +
                 '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
                 '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-41</div>' +
-                '                <div><a href="pages/복지관.html">안내 페이지</a></div>' +
+                '                <div><a href="pages/복지관.html" target="_blank">안내 페이지</a></div>' +
                 '                <div><a href="https://place.map.kakao.com/17565051" target="_blank" class="link">오시는 길</a></div>' +
                 '            </div>' +
                 '        </div>' +
