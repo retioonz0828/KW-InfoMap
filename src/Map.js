@@ -77,7 +77,6 @@ function kwplace(kwpositions) {
             itemEl.onclick=function () {
                 displayPlaceInfo(place);
                 customOverlay.setContent(content);
-                itemEl.className="item-on";
             };
         })(marker, kwpositions[i].latlng, content);
         listEl.appendChild(itemEl);
