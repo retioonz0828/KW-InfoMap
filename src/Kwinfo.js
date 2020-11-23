@@ -120,41 +120,19 @@ var kwcontent=[
         con: '<div class="ovr">' +
         '    <div class="info">' +
         '        <div class="title">' +
-        '            동해문화예술관' +
+        '            참빛관' +
         '            <div class="close" onclick="removeOverlay()" title="닫기"></div>' +
         '        </div>' +
         '        <div class="body">' +
         '            <div class="img">' +
-        '                <img src="https://www.kw.ac.kr/ko/img/tour01_05.jpg" width="140" height="140">' +
+        '                <img src="https://www.kw.ac.kr/ko/img/tour01_15.jpg" width="140" height="140">' +
         '           </div>' +
         '            <div class="desc">' +
-        '                <div class="pur" style="font-weight: 700; font-size: 15px;">강당</div>' +
-        '                <div class="ellipsis">서울 노원구 광운로 21</div>' +
-        '                <div class="jibun ellipsis">(우)01890 (지번) 월계동 466</div>' +
-        '                <div><a href="pages/동해문화예술관.html" class="kwbtn" target="_blank">안내 페이지</a></div>' +
-        '                <div><a href="https://place.map.kakao.com/17564275"class="kwbtn" target="_blank" class="link">오시는 길</a></div>' +
-        '            </div>' +
-        '        </div>' +
-        '    </div>' +
-        '</div>'
-    },
-    {
-        con: '<div class="ovr">' +
-        '    <div class="info">' +
-        '        <div class="title">' +
-        '            옥의관' +
-        '            <div class="close" onclick="removeOverlay()" title="닫기"></div>' +
-        '        </div>' +
-        '        <div class="body">' +
-        '            <div class="img">' +
-        '                <img src="https://www.kw.ac.kr/ko/img/tour01_14.jpg" width="140" height="140">' +
-        '           </div>' +
-        '            <div class="desc">' +
-        '                <div class="pur" style="font-weight: 700; font-size: 15px;">자연과학대학</div>' +
-        '                <div class="ellipsis">서울 노원구 광운로6길 31</div>' +
-        '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-5</div>' +
-        '                <div><a href="pages/옥의관.html" class="kwbtn" target="_blank">안내 페이지</a></div>' +
-        '                <div><a href="https://place.map.kakao.com/17567827" class="kwbtn" target="_blank" class="link">오시는 길</a></div>' +
+        '                <div class="pur" style="font-weight: 700; font-size: 14px;">전자정보공과대학,공학대학</div>' +
+        '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
+        '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
+        '                <div><a href="pages/참빛관.html" class="kwbtn" target="_blank">안내 페이지</a></div>' +
+        '                <div><a href="https://place.map.kakao.com/27202326"  class="kwbtn"target="_blank" class="link">오시는 길</a></div>' +
         '            </div>' +
         '        </div>' +
         '    </div>' +
@@ -186,6 +164,27 @@ var kwcontent=[
         con: '<div class="ovr">' +
         '    <div class="info">' +
         '        <div class="title">' +
+        '            옥의관' +
+        '            <div class="close" onclick="removeOverlay()" title="닫기"></div>' +
+        '        </div>' +
+        '        <div class="body">' +
+        '            <div class="img">' +
+        '                <img src="https://www.kw.ac.kr/ko/img/tour01_14.jpg" width="140" height="140">' +
+        '           </div>' +
+        '            <div class="desc">' +
+        '                <div class="pur" style="font-weight: 700; font-size: 15px;">자연과학대학</div>' +
+        '                <div class="ellipsis">서울 노원구 광운로6길 31</div>' +
+        '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-5</div>' +
+        '                <div><a href="pages/옥의관.html" class="kwbtn" target="_blank">안내 페이지</a></div>' +
+        '                <div><a href="https://place.map.kakao.com/17567827" class="kwbtn" target="_blank" class="link">오시는 길</a></div>' +
+        '            </div>' +
+        '        </div>' +
+        '    </div>' +
+        '</div>'
+    },{
+        con: '<div class="ovr">' +
+        '    <div class="info">' +
+        '        <div class="title">' +
         '            누리관' +
         '            <div class="close" onclick="removeOverlay()" title="닫기"></div>' +
         '        </div>' +
@@ -199,28 +198,6 @@ var kwcontent=[
         '                <div class="jibun ellipsis">(우) 01890 (지번) 월계동 505-2</div>' +
         '                <div><a href="pages/누리관.html" class="kwbtn" target="_blank">안내 페이지</a></div>' +
         '                <div><a href="https://place.map.kakao.com/12721052" class="kwbtn" target="_blank" class="link">오시는 길</a></div>' +
-        '            </div>' +
-        '        </div>' +
-        '    </div>' +
-        '</div>'
-    },
-    {
-        con: '<div class="ovr">' +
-        '    <div class="info">' +
-        '        <div class="title">' +
-        '            참빛관' +
-        '            <div class="close" onclick="removeOverlay()" title="닫기"></div>' +
-        '        </div>' +
-        '        <div class="body">' +
-        '            <div class="img">' +
-        '                <img src="https://www.kw.ac.kr/ko/img/tour01_15.jpg" width="140" height="140">' +
-        '           </div>' +
-        '            <div class="desc">' +
-        '                <div class="pur" style="font-weight: 700; font-size: 14px;">전자정보공과대학,공학대학</div>' +
-        '                <div class="ellipsis">서울 노원구 광운로 20</div>' +
-        '                <div class="jibun ellipsis">(우) 01897 (지번) 월계동 447-1</div>' +
-        '                <div><a href="pages/참빛관.html" class="kwbtn" target="_blank">안내 페이지</a></div>' +
-        '                <div><a href="https://place.map.kakao.com/27202326"  class="kwbtn"target="_blank" class="link">오시는 길</a></div>' +
         '            </div>' +
         '        </div>' +
         '    </div>' +
@@ -275,6 +252,28 @@ var kwcontent=[
         con: '<div class="ovr">' +
         '    <div class="info">' +
         '        <div class="title">' +
+        '            동해문화예술관' +
+        '            <div class="close" onclick="removeOverlay()" title="닫기"></div>' +
+        '        </div>' +
+        '        <div class="body">' +
+        '            <div class="img">' +
+        '                <img src="https://www.kw.ac.kr/ko/img/tour01_05.jpg" width="140" height="140">' +
+        '           </div>' +
+        '            <div class="desc">' +
+        '                <div class="pur" style="font-weight: 700; font-size: 15px;">강당</div>' +
+        '                <div class="ellipsis">서울 노원구 광운로 21</div>' +
+        '                <div class="jibun ellipsis">(우)01890 (지번) 월계동 466</div>' +
+        '                <div><a href="pages/동해문화예술관.html" class="kwbtn" target="_blank">안내 페이지</a></div>' +
+        '                <div><a href="https://place.map.kakao.com/17564275"class="kwbtn" target="_blank" class="link">오시는 길</a></div>' +
+        '            </div>' +
+        '        </div>' +
+        '    </div>' +
+        '</div>'
+    },
+    {
+        con: '<div class="ovr">' +
+        '    <div class="info">' +
+        '        <div class="title">' +
         '            빛솔재' +
         '            <div class="close" onclick="removeOverlay()" title="닫기"></div>' +
         '        </div>' +
@@ -293,7 +292,6 @@ var kwcontent=[
         '    </div>' +
         '</div>'
     }
-
 ]
 
 var kwside=[
@@ -341,6 +339,13 @@ var kwside=[
     },
     {
         scon :  '<div class="infosidebar">' +
+                '   <h3>' +'이름: 누리관'+ '</h3>'+
+                '<span>' + '주소: 서울 노원구 광운로1길 60' + '</span>'+'<br>'+
+                '<span>' + '로봇학부, 경영학부' + '</span>'+'<br>' +
+                '</div>'
+    },
+    {
+        scon :  '<div class="infosidebar">' +
                 '   <h3>' +'이름: 80주년기념관(도서관)'+ '</h3>'+
                 '<span>' + '주소: 서울 노원구 광운로 20' + '</span>'+'<br>'+
                 '<span>' + '도서관, 우체국, 푸드코트' + '</span>'+'<br>' +
@@ -353,6 +358,7 @@ var kwside=[
                 '<span>' + '동아리실, 함지마루(학생식당)' + '</span>'+'<br>' +
                 '</div>'
     },
+    
     {
         scon :  '<div class="infosidebar">' +
                 '   <h3>' +'이름: 동해문화예술관'+ '</h3>'+

@@ -72,6 +72,14 @@ function kwplace(kwpositions) {
                 customOverlay.setContent(content);
                 customOverlay.setMap(map);
             });
+            itemEl.onmouseover =  function () {
+                displayPlaceInfo(place);
+                customOverlay.setContent(content);
+            };
+    
+            itemEl.onmouseout =  function () {
+                removeOverlay();
+            };
         })(marker, kwpositions[i].latlng, content);
         listEl.appendChild(itemEl);
     }
@@ -109,7 +117,7 @@ function displayPlaces(places) {
         // 장소정보를 표출하도록 클릭 이벤트를 등록합니다
         kakao.maps.event.addListener(marker, 'click', function() {
             // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
-            infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name+'</div>');
+            infowindow.setContent('<div class="infowin">' + place.place_name+'</div>');
             infowindow.open(map, marker);
         });
         (function(marker, title) {
@@ -136,16 +144,14 @@ function displayPlaces(places) {
 
 //마우스 오버함수
 function displayInfowindow(marker, title) {
-    var content = '<div style="padding:5px;z-index:1;">' + title + '</div>';
-
-    infowindow.setContent(content);
+    infowindow.setContent('<div class="infowin">' + title+'</div>');
     infowindow.open(map, marker);
 }
 
 //마커 출력
 function addMarker(position) {
     var marker = new kakao.maps.Marker({
-        position: position, // 마커의 위치
+        position: position // 마커의 위치
     });
 
     marker.setMap(map); // 지도 위에 마커를 표출합니다
