@@ -1,4 +1,4 @@
-//지도를 띄울 div생성.
+//지도를 띄울 div생성
 var mapwrap = document.createElement("div");
 mapwrap.id = "map";
 document.body.appendChild(mapwrap);
