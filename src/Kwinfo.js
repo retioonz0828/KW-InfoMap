@@ -105,7 +105,7 @@ var kwcontent=[
         '        </div>' +
         '        <div class="body">' +
         '            <div class="img">' +
-        '                <img src="https://www.kw.ac.kr/ko/img/tour01_07.jpg" width="140" height="140">' +
+        '                <img src="https://www.kw.ac.kr/ko/img/tour01_27.jpg" width="140" height="140">' +
         '           </div>' +
         '            <div class="desc">' +
         '                <div class="pur" style="font-weight: 700; font-size: 15px;">소프트웨어 융합 대학</div>' +
