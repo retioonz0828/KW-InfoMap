@@ -1,3 +1,7 @@
+# Kakao Map API를 광운대학교 정보 지도
+
+Kakao Map API를 이용하여 제작한 광운대학교 캠퍼스 내부 건물의 정보뿐 아니라, 주변 시설의 정보까지 알려주는 지도 프로그램입니다.
+
 ## 실행
 
 [https://taedud.github.io/KW-InfoMap/](https://taedud.github.io/KW-InfoMap/)의 링크로 들어가시면 제작된 지도 페이지에 접속할 수 있습니다.
@@ -16,7 +20,7 @@
 <br/>
 
 
-### 안내 페이지
+## 안내 페이지
 
 ![](./mdimg/5.png)
 <br/>
@@ -24,7 +28,7 @@
 <br/>
 
 
-### 오시는 길
+## 오시는 길
 
 ![](./mdimg/6.png)
 ![](./mdimg/7.png)
@@ -33,7 +37,7 @@
 <br/>
 
 
-### 중앙 도서관
+## 중앙 도서관
 
 ![](./mdimg/8.png)
 <br/>
