@@ -24,6 +24,7 @@ categorysel.addEventListener('click', function (e) {
         removeMarker();
         updatecode("");
         infowindow.close();
+        sidebarclose();
     } else {
         currclick = e.target.id;
         updatecode(e.target.id);

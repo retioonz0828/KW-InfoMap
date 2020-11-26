@@ -227,3 +227,11 @@ function kwSidebar(innum) {
 
     return el;
 }
+
+function sidebarclose(){
+    menuEl = document.getElementById('sidebar-wrapper');
+    listStr = '';
+    var listEl = document.getElementById('placesList');
+
+    listEl.innerHTML = '';
+}
